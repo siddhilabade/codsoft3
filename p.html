@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="p.css">
+    <script src="https://kit.fontawesome.com/68899938a9.js" crossorigin="anonymous"></script>
+</head>
+<bo
+    <div id="header">
+        
+        <div class="container">
+             <nav>
+                
+                <img src="siddhilogo1.jpeg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>                       
+                    
+                </ul>
+             </nav>
+             <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi,I'm <span>Siddhi</span><br>Labade From India</h1>
+             </div>
+            
+        
+        </div>
+        
+    </div>
+    <!-- ----------about--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="siddhiphoto.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello,I am Siddhi Rajendra Labade,currently studying in 2nd year of Computer Science &Engineering in B.Tech in Sveri's College Of Engineering.I am doing coding in c,c++,Java,python,HTMl,CSS languages,ect.  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br> C,C++,Python,Java,Html</li>
+                            <li><span>Web Development</span><br> Website Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Diwali Animation</span><br> Create a project Diwali Animation using computer graphics</li>
+                            <li><span>Parking Management System</span><br> Develop a code for Parking Management System using python </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br> Completed SSC in Morjai Vidhyalaya Morochi </li>
+                            <li><span>2022</span><br>Completed HSC in Natepute Junior College,Natepute </li>
+                            <li><span>2024</span><br>Pursuing  B.Tech in CSE in Sveri's College Of engg.Pandharpur </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>siddhirlabade@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt "></i>8605985441</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="contact-right"></div>
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name"required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="Message" textarea name="Message"  rows="6" placeholder="Your Message"> </textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+                     
+                                
+           
+           <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+                
+    </script>
+</body>
+</html>
